@@ -1,0 +1,16 @@
+slug: "teste-deploy2"
+repo_full_name: "3F-Tech/teste-deploy-frontend2"
+path: "/opt/apps/teste-deploy2"
+kind: "frontend"
+runtime: "node"
+install_cmd: "pnpm install"
+build_cmd: "pnpm build"
+start_cmd: "pnpm preview --port 3020 --host"
+pm2_name: "teste-deploy2"
+port: 3020
+healthcheck: "/"
+requires_nginx: true
+domains:
+  - "teste-deploy2.3fventure.tech"
+required_env:
+  - "PORT"

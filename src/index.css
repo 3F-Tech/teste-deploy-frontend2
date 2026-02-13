@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 10% 97%;
+    --foreground: 210 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 15%;
+
+    --primary: 210 10% 35%;
+    --primary-foreground: 210 10% 97%;
+
+    --secondary: 210 8% 92%;
+    --secondary-foreground: 210 15% 15%;
+
+    --muted: 210 8% 94%;
+    --muted-foreground: 210 10% 45%;
+
+    --accent: 210 10% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 8% 88%;
+    --input: 210 8% 88%;
+    --ring: 210 10% 35%;
+
+    --radius: 0.5rem;
+
+    /* CHAR evaluation colors */
+    --char-c: 222 76% 48%;
+    --char-h: 147 58% 43%;
+    --char-a: 38 92% 50%;
+    --char-r: 258 81% 58%;
+
+    /* Hero gradient - gray tones */
+    --hero-gradient-start: 210 10% 20%;
+    --hero-gradient-mid: 210 10% 35%;
+    --hero-gradient-end: 210 8% 50%;
+
+    --sidebar-background: 210 10% 35%;
+    --sidebar-foreground: 210 10% 97%;
+    --sidebar-primary: 210 10% 20%;
+    --sidebar-primary-foreground: 210 10% 97%;
+    --sidebar-accent: 210 10% 30%;
+    --sidebar-accent-foreground: 210 10% 97%;
+    --sidebar-border: 210 10% 30%;
+    --sidebar-ring: 210 8% 50%;
+  }
+
+  .dark {
+    --background: 210 10% 10%;
+    --foreground: 210 10% 95%;
+
+    --card: 210 10% 15%;
+    --card-foreground: 210 10% 95%;
+
+    --popover: 210 10% 15%;
+    --popover-foreground: 210 10% 95%;
+
+    --primary: 210 8% 70%;
+    --primary-foreground: 210 10% 10%;
+
+    --secondary: 210 10% 20%;
+    --secondary-foreground: 210 10% 95%;
+
+    --muted: 210 10% 18%;
+    --muted-foreground: 210 8% 60%;
+
+    --accent: 210 8% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 10% 95%;
+
+    --border: 210 10% 20%;
+    --input: 210 10% 20%;
+    --ring: 210 8% 70%;
+
+    --hero-gradient-start: 210 10% 10%;
+    --hero-gradient-mid: 210 10% 25%;
+    --hero-gradient-end: 210 8% 40%;
+
+    --sidebar-background: 210 10% 10%;
+    --sidebar-foreground: 210 10% 95%;
+    --sidebar-primary: 210 8% 70%;
+    --sidebar-primary-foreground: 210 10% 10%;
+    --sidebar-accent: 210 10% 15%;
+    --sidebar-accent-foreground: 210 10% 95%;
+    --sidebar-border: 210 10% 15%;
+    --sidebar-ring: 210 8% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
